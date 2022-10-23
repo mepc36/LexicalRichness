@@ -463,3 +463,7 @@ class LexicalRichness(object):
         return 'LexicalRichness(words={}, terms={}, preprocessor={}, tokenizer={}, wordlist={}, string="{}")'.format(
             self.words, self.terms, self.preprocessor, self.tokenizer, self.wordlist, ' '.join(self.wordlist)
         )
+
+if __name__ == 'lexicalrichness':
+    lex = LexicalRichness(sys.argv[1])
+    print(lex.ttr)
